@@ -21,6 +21,10 @@ NoQuitter is an APP designed to help someome who want to quit-smoking. We want t
 ## <img src="app/src/main/res/drawable/logo.png" width="30" > SDGs
 - Good Health
 
+## <img src="app/src/main/res/drawable/logo.png" width="30" > How to run code
+- Download all files
+- import to Android
+
 ## <img src="app/src/main/res/drawable/logo.png" width="30" > Demo Video
 - Demo https://www.youtube.com/watch?v=4w2m5jKJwTQ
 
