@@ -12,12 +12,15 @@ NoQuitter is an APP designed to help someome who want to quit-smoking. We want t
 - Android studio -> development
 - Firebase Authentication and Realtime Database ->store user account and correspoding data and diary
 
-## Future 
+## <img src="app/src/main/res/drawable/logo.png" width="50" > Future 
 - increase interaction between users
   - set up chatting area
   - users can share their roads on quitting smoking
   - develop this app to a community platform
   
+## <img src="app/src/main/res/drawable/logo.png" width="50" > SDGs
+- Good Health
+
 ## <img src="app/src/main/res/drawable/logo.png" width="50" > Demo Video
 - Demo https://www.youtube.com/watch?v=4w2m5jKJwTQ
 
