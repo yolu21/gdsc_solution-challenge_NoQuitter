@@ -10,7 +10,7 @@ NoQuitter is an APP designed to help someome who want to quit-smoking. We want t
 
 ## <img src="app/src/main/res/drawable/logo.png" width="50" > Technique used
 - Android studio -> development
-- Firebase Authentication and Realtime Database ->store user account and correspoding data and diary
+- Firebase Authentication and Realtime Database -> store user account and correspoding data and diary
 
 ## <img src="app/src/main/res/drawable/logo.png" width="50" > Future 
 - increase interaction between users
