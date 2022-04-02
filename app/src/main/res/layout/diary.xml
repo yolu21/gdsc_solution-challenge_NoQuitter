@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:src="@drawable/logo" />
+
+
+    <EditText
+        android:id="@+id/daily"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/color"
+        android:hint="  Write down today's feeling!"
+        android:textColor="#438b70"
+        android:textSize="20sp"
+        app:backgroundTint="@null"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/daily"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Good Night!"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:layout_height="100dp"
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-25dp"
+
+        android:background="@drawable/color"
+        >
+        <TextView
+            android:id="@+id/zero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="100dp"/>
+
+        <Button
+            android:id="@+id/btn_help3"
+
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_toLeftOf="@+id/btn_home3"
+            android:layout_toRightOf="@+id/zero"
+            android:background="@drawable/btn"
+            android:text="help"
+            android:textColor="#438b70"
+            android:textSize="30dp"
+            app:backgroundTint="@null" />
+
+
+
+        <Button
+            android:id="@+id/btn_home3"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn"
+            android:text="home"
+            android:textColor="#438b70"
+            android:textSize="30dp"
+            app:backgroundTint="@null" />
+        <TextView
+            android:id="@+id/zero2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:layout_alignParentRight="true"
+            android:textSize="100dp"
+            />
+
+        <Button
+            android:id="@+id/btn_history3"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/zero2"
+            android:layout_toRightOf="@+id/btn_home3"
+            android:background="@drawable/btn"
+            android:text="diary"
+            android:textColor="#438b70"
+            android:textSize="30dp"
+            app:backgroundTint="@null" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:text="signout"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/date_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have"
+        android:textSize="40dp"
+        android:layout_above="@+id/date_show"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/date_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/date_count"
+        android:layout_centerHorizontal="true"
+        android:text="quit smoking "
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/date_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_smoking"
+        android:layout_centerHorizontal="true"
+        android:text="1"
+        android:textSize="100dp" />
+
+    <Button
+        android:id="@+id/btn_smoking"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/style"
+        android:text="want smoking"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_smoking"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/style"
+        android:text="end today"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="@null" />
+
+    <RelativeLayout
+        android:layout_height="100dp"
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-25dp"
+        android:background="@drawable/color"
+        >
+        <TextView
+            android:id="@+id/zero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="100dp"/>
+
+        <Button
+            android:id="@+id/btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_toLeftOf="@+id/btn_home"
+            android:layout_toRightOf="@+id/zero"
+            android:background="@drawable/btn"
+            android:src="@drawable/logo"
+            android:text="help"
+            android:textColor="#438b70"
+            android:textSize="30dp"
+            app:backgroundTint="@null" />
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="home"
+            android:textSize="30dp"
+            android:background="@drawable/btn"
+            android:textColor="#438b70"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:id="@+id/zero2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:layout_alignParentRight="true"
+            android:textSize="100dp"
+            />
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_history"
+            android:layout_toRightOf="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="diary"
+            android:textSize="30dp"
+            android:layout_toLeftOf="@+id/zero2"
+            android:background="@drawable/btn"
+            android:textColor="#438b70"
+            app:backgroundTint="@null"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

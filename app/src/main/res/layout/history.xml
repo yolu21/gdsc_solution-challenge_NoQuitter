@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txv_his"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_his"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txv_his"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/color"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_his"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_his"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="check"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txv_showhis"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btn_his"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/color"
+        android:visibility="gone"
+        android:textSize="20dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/down"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-25dp"
+
+            android:background="@drawable/color">
+
+            <TextView
+                android:id="@+id/zero"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textSize="100dp" />
+
+            <Button
+                android:id="@+id/btn_help5"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_toLeftOf="@+id/btn_home5"
+                android:layout_toRightOf="@+id/zero"
+                android:background="@drawable/btn"
+                android:text="help"
+                android:textColor="#438b70"
+                android:textSize="30dp"
+                app:backgroundTint="@null" />
+
+
+            <Button
+                android:id="@+id/btn_home5"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn"
+                android:text="home"
+                android:textColor="#438b70"
+                android:textSize="30dp"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/zero2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="1"
+                android:textSize="100dp" />
+
+            <Button
+                android:id="@+id/btn_history5"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/zero2"
+                android:layout_toRightOf="@+id/btn_home5"
+                android:background="@drawable/btn"
+                android:text="diary"
+                android:textColor="#438b70"
+                android:textSize="30dp"
+                app:backgroundTint="@null" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>

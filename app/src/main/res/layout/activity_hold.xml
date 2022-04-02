@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Where are you?"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:hint="Write down your location!"
+        android:paddingLeft="10dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/checkLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style"
+        android:text="check"
+        android:textColor="@color/white"
+        app:backgroundTint="@null">
+
+    </Button>
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkLoc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/ActTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/teal_700"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ActTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ActTitle"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ActContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ActTime"
+            android:layout_marginLeft="20dp"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/createAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rel1"
+        android:layout_marginTop="40dp"
+        android:text="create"
+        android:textColor="@color/white">
+
+    </Button>
+    <RelativeLayout
+        android:layout_height="100dp"
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-25dp"
+
+        android:background="@drawable/color"
+        >
+        <TextView
+            android:id="@+id/zero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="100dp"/>
+
+        <Button
+            android:id="@+id/btn_help1"
+
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_toLeftOf="@+id/btn_home1"
+            android:layout_toRightOf="@+id/zero"
+            android:background="@drawable/btn"
+            android:text="help"
+            android:textColor="#438b70"
+            android:textSize="30dp"
+            app:backgroundTint="@null" />
+
+
+        <Button
+            android:id="@+id/btn_home1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn"
+            android:text="home"
+            android:textColor="#438b70"
+            android:textSize="30dp"
+            app:backgroundTint="@null" />
+        <TextView
+            android:id="@+id/zero2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:layout_alignParentRight="true"
+            android:textSize="100dp"
+            />
+
+        <Button
+            android:id="@+id/btn_history1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/zero2"
+            android:layout_toRightOf="@+id/btn_home1"
+            android:background="@drawable/btn"
+            android:text="diary"
+            android:textColor="#438b70"
+            android:textSize="30dp"
+            app:backgroundTint="@null" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

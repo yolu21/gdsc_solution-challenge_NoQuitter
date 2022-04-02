@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".want_smoking">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:src="@drawable/logo" />
+    <RelativeLayout
+        android:layout_below="@+id/logo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/lay1"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Why quit smoke?"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/reason_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reason_show"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Three things to replace smoking"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/thing1_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/thing2_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thing1_show"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/thing3_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thing2_show"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="100dp"
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-25dp"
+
+        android:background="@drawable/color"
+        >
+        <TextView
+            android:id="@+id/zero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="100dp"/>
+
+        <Button
+            android:id="@+id/btn_help6"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_toLeftOf="@+id/btn_home6"
+            android:layout_toRightOf="@+id/zero"
+            android:background="@drawable/btn"
+            android:src="@drawable/logo"
+            android:text="help"
+            android:textColor="#438b70"
+            android:textSize="30dp"
+            app:backgroundTint="@null" />
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_home6"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="home"
+            android:textSize="30dp"
+            android:background="@drawable/btn"
+            android:textColor="#438b70"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:id="@+id/zero2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:layout_alignParentRight="true"
+            android:textSize="100dp"
+            />
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_history6"
+            android:layout_toRightOf="@+id/btn_home6"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="diary"
+            android:textSize="30dp"
+            android:layout_toLeftOf="@+id/zero2"
+            android:background="@drawable/btn"
+            android:textColor="#438b70"
+            app:backgroundTint="@null"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
