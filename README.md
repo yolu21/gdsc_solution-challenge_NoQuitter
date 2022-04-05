@@ -24,7 +24,7 @@ NoQuitter is an APP designed to help someome who want to quit-smoking. We want t
 ## <img src="app/src/main/res/drawable/logo.png" width="30" > How to run code
 - Download all files
 - import to Android Studio
-- Click "Tools-> Firbase" at the top bar 
+- Click "Tools -> Firbase" at the top bar 
 - Connect to your own firebase (Authentication and Realtime Database) and add SDK
 
 ## <img src="app/src/main/res/drawable/logo.png" width="30" > Demo Video
